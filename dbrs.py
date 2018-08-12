@@ -29,14 +29,14 @@ def get_data():
 
     headers = ['created_date', 'borough', 'complaint_type', 'incident_zip']
 
-    with open('complaints.csv', 'w') as f:
+    with open('complaint.csv', 'w') as f:
 
         csvwriter = csv.DictWriter(f, headers)
         csvwriter.writeheader()
         csvwriter.writerows(all_complaints)
 
     print('SUCCESS. Number of complaints downloaded: {}'.format(len(all_complaints)))
-    print('Saved to {} file'.format('complaints.csv'))
+    print('Saved to {} file'.format('complaint.csv'))
 
 
 def main():
