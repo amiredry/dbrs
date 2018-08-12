@@ -7,7 +7,7 @@ socrata_dataset_identifier = 'fhrw-4uyv'
 
 
 def get_data():
-    client = Socrata(socrata_domain, None)
+    client = Socrata(socrata_domain, 'ohJoNJOw8qez7ABLZhzGUja4n')
     lmt = 1000000
     start_at = 0
     all_complaints = []

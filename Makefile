@@ -4,12 +4,12 @@ PIP ?= $(VE)/bin/pip
 REQUIREMENTS ?= requirements.txt
 
 
-install_env:
+create:
 	@echo "Installing python virtual env at $(VE)"
 	rm -rf $(VE)
 	python3 -m venv $(VE)
 	$(PIP) install --requirement $(REQUIREMENTS)
 
-getdata: install_env
+getdata:
 	@echo "Downloading data..."
 	$(VE)/bin/python3 ./dbrs.py
