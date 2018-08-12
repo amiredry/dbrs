@@ -10,6 +10,6 @@ install_env:
 	python3 -m venv $(VE)
 	$(PIP) install --requirement $(REQUIREMENTS)
 
-getdata: install_env
+getdata:
 	@echo "Downloading data..."
 	$(VE)/bin/python3 ./dbrs.py
