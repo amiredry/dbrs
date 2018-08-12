@@ -36,6 +36,7 @@ def get_data():
         csvwriter.writerows(all_complaints)
 
     print('SUCCESS. Number of complaints downloaded: {}'.format(len(all_complaints)))
+    print('Saved to {} file'.format('complaints.csv'))
 
 
 def main():
